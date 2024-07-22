@@ -9,7 +9,7 @@ namespace Assets.Builder_mainProject._1Scripts._1DI
         private readonly Dictionary<(string, Type), DIRegistration> _registrations = new();
         private readonly HashSet<(string, Type)> _resolutions = new();
 
-        public DIContainer(DIContainer parentContainer) { 
+        public DIContainer(DIContainer parentContainer = null) { 
             _parentContainer = parentContainer;
         }
 
